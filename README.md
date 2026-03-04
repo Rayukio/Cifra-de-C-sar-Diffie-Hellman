@@ -19,7 +19,9 @@ Inicialmente, foi utilizada uma implementação básica de cliente e servidor TC
 
 A comunicação ocorre via:
 
+```
 127.0.0.1:12500
+```
 
 Ao analisar com Wireshark (filtro `tcp.port == 12500`), observa-se que os dados trafegam em texto claro, podendo ser interceptados facilmente.
 
@@ -35,7 +37,9 @@ Foi implementada uma cifra de substituição baseada em deslocamento modular no 
 
 Cada letra é deslocada por um valor `k`:
 
+```
 C = (P + k) mod 26
+```
 
 Onde:
 - P = posição da letra no alfabeto
@@ -66,20 +70,20 @@ Para resolver o problema da distribuição da chave, foi implementado o algoritm
    - Servidor → `b`
 
 3. São geradas chaves públicas:
-
+```
 A = g^a mod p  
 B = g^b mod p  
-
+```
 4. Após a troca das chaves públicas:
 
 Cliente calcula:
-
+```
 K = B^a mod p  
-
+```
 Servidor calcula:
-
+```
 K = A^b mod p  
-
+```
 Ambos chegam ao mesmo valor secreto `K`, sem transmiti-lo pela rede.
 
 ---
@@ -143,15 +147,21 @@ Resultados observados:
 
 Iniciar servidor:
 
+```
 python SimpleTCPServer.py
+```
 
 Iniciar cliente:
 
+```
 python SimpleTCPClient.py
+```
 
 Utilizar Wireshark com filtro:
 
+```
 tcp.port == 12500
+```
 
 ---
 
@@ -174,4 +184,5 @@ O projeto demonstra:
 
 
 Mostrando, na prática, a importância da criptografia na comunicação em redes.
+
 
