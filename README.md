@@ -130,11 +130,12 @@ Resultados observados:
 
 ## 📂 Estrutura do Projeto
 
+```
 /socket_tcp_secure
-│
 ├── SimpleTCPServer.py
 ├── SimpleTCPClient.py
 └── README.md
+```
 
 ---
 
@@ -173,3 +174,4 @@ O projeto demonstra:
 
 
 Mostrando, na prática, a importância da criptografia na comunicação em redes.
+
