@@ -115,7 +115,7 @@ Isso garante que:
 
 ---
 
-🔍 Análise com Wireshark
+## 🔍 Análise com Wireshark
 
 Filtro utilizado:
 tcp.port == 12500
@@ -128,7 +128,7 @@ Resultados observados:
 
 ---
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 /socket_tcp_secure
 │
@@ -138,7 +138,7 @@ Resultados observados:
 
 ---
 
-▶ Como Executar
+##▶ Como Executar
 
 Iniciar servidor:
 
@@ -152,13 +152,17 @@ Utilizar Wireshark com filtro:
 
 tcp.port == 12500
 
-⚠ Considerações de Segurança
+---
+
+## ⚠ Considerações de Segurança
   - A Cifra de César isoladamente não é segura.
   - Diffie-Hellman resolve o problema da troca de chave.
   - O sistema ainda estaria vulnerável a ataques Man-in-the-Middle.
   - Protocolos reais como TLS utilizam esses conceitos de forma robusta.
 
-🎯 Conclusão
+---
+
+## 🎯 Conclusão
 
 O projeto demonstra:
   - Funcionamento da pilha TCP
@@ -166,5 +170,6 @@ O projeto demonstra:
   - Troca segura de chave
   - Aplicação prática de aritmética modular
   - Análise de tráfego de rede
+
 
 Mostrando, na prática, a importância da criptografia na comunicação em redes.
