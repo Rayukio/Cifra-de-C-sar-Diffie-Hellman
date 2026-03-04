@@ -136,8 +136,8 @@ Resultados observados:
 
 ```
 /socket_tcp_secure
-├── SimpleTCPServer.py
-├── SimpleTCPClient.py
+├── Simple_TCPServer.py
+├── Simple_TCPClient.py
 └── README.md
 ```
 
@@ -148,13 +148,13 @@ Resultados observados:
 Iniciar servidor:
 
 ```
-python SimpleTCPServer.py
+python Simple_TCPServer.py
 ```
 
 Iniciar cliente:
 
 ```
-python SimpleTCPClient.py
+python Simple_TCPClient.py
 ```
 
 Utilizar Wireshark com filtro:
@@ -184,5 +184,6 @@ O projeto demonstra:
 
 
 Mostrando, na prática, a importância da criptografia na comunicação em redes.
+
 
 
